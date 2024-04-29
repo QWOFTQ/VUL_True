@@ -4,6 +4,8 @@
 
 /* 메뉴 */
 
+
+
 .nav {
   display: flex;
   align-items: center;
@@ -20,9 +22,7 @@
   text-decoration: none; /* a tag 사용 시 생기는 밑줄 제거*/
 }
 
-.nav h2 a {
-  /*Link 안에 a tag가 있어서 style 적용*/
-  color: inherit;
+
 .nav h2 a {
   /*Link 안에 a tag가 있어서 style 적용*/
   color: inherit;
@@ -60,6 +60,69 @@
   justify-content: center;
   height: 100vh; /* 화면 전체 높이로 설정하여 수직 가운데 정렬 */
   background-color: white;
+}
+
+.loginform form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginform div {
+  margin-bottom: 20px; /* 각 입력란과 버튼 사이의 간격 조절 */
+}
+
+.loginform label {
+  display: none; /* label을 숨김 처리 */
+}
+
+.loginform input {
+  padding: 10px 100px;
+}
+
+.loginform input::placeholder {
+  text-align: center;
+  padding-left: 10px;
+}
+
+/* 로그인 폼 감싸고 있는 div */
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  width: 450px;
+  background-color: #262626;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.box div {
+  margin-bottom: 20px;
+}
+
+/* 로그인 버튼 */
+
+.login-button {
+  width: 365px;
+  height: 40px;
+  background-color: #296cf2;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* 회원가입 */
+
+.sign-up a {
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
 }
 
 .loginform form {
