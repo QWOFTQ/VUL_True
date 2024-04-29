@@ -1,0 +1,50 @@
+#root {
+  background-color: lightgray;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-left: 50px;
+}
+
+.nav h2 {
+  font-size: xx-large;
+  font-weight: 600;
+  margin-right: auto;
+  color: black; /* 검정색으로 변경 */
+  text-decoration: none;
+}
+
+.nav h2 a {  /*Link 안에 a tag가 있어서 style 적용*/
+  color: inherit; 
+  text-decoration: none;
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.navMenu a {
+  margin: 0 50px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.navLogin {
+  margin-right: 50px;
+}
+
+.navLogin a {
+  color: blue;
+  text-decoration: none;
+}
+
+.loginform {
+  background-color: white;
+}
