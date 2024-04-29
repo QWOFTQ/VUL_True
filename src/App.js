@@ -1,8 +1,9 @@
-import "./App.css";
+import './App.css';
 
 function Home() {
   return <div />;
 }
+
 function App() {
   return (
     <Router>
@@ -22,7 +23,7 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
