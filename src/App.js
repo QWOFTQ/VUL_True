@@ -1,4 +1,4 @@
-import "./App.css";
+import './App.css';
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
           <a href="#">로그인</a>
         </div>
       </div>
+      <div className="container"></div>
     </div>
   );
 }
