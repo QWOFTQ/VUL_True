@@ -1,4 +1,6 @@
 import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 function Home() {
   return <div />;
@@ -16,12 +18,15 @@ function App() {
             <Link to="/server">서버 모니터링</Link>
             <Link to="/guide">사용 가이드</Link>
             <Link to="/team">팀 소개</Link>
-            <Link to="/github">깃허브</Link>
+            <a href="https://github.com/QWOFTQ/VUL_True/tree/develop">깃허브</a>
           </div>
           <div className="navLogin">
             <Link to="/login">로그인</Link>
           </div>
         </div>
+      </div>
+      <div>
+        <img src="" alt="" />
       </div>
     </Router>
   );
