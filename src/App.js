@@ -1,9 +1,9 @@
-import './App.css';
-import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import LoginForm from "./login/loginform.jsx";
 
 function Home() {
-  return <div />;
+  return <div></div>;
 }
 
 function App() {
@@ -25,9 +25,12 @@ function App() {
           </div>
         </div>
       </div>
-      <div>
-        <img src="" alt="" />
-      </div>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<LoginForm />} />
+        {/* 다른 페이지 라우트 설정 */}
+      </Routes>
     </Router>
   );
 }
