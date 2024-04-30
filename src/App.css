@@ -2,14 +2,7 @@
   background-color: lightgray;
 }
 
-<<<<<<< Updated upstream
 /* 메뉴 */
-
-
-
-=======
-/* 네비게이션 바 */
->>>>>>> Stashed changes
 .nav {
   /* nav 하위 요소들 가운데 정렬하기 위해 flex로 설정 */
   display: flex;
@@ -27,13 +20,7 @@
   text-decoration: none; /* a tag 사용 시 생기는 밑줄 제거*/
 }
 
-
 .nav h2 a {
-<<<<<<< Updated upstream
-  /*Link 안에 a tag가 있어서 style 적용*/
-=======
-  /* 상위 요소인 h2의 글꼴 색상을 받음 */
->>>>>>> Stashed changes
   color: inherit;
   text-decoration: none;
 }
@@ -72,12 +59,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-<<<<<<< Updated upstream
-  height: 100vh; /* 화면 전체 높이로 설정하여 수직 가운데 정렬 */
-=======
-  /* 세로 크기 100% */
   height: 100vh;
->>>>>>> Stashed changes
   background-color: white;
 }
 
@@ -147,7 +129,10 @@
   font-size: 10px;
 }
 
-<<<<<<< Updated upstream
+.signUpMain {
+  background-color: white;
+}
+
 .loginform form {
   display: flex;
   flex-direction: column;
@@ -210,8 +195,3 @@
   text-decoration: none;
   font-size: 10px;
 }
-=======
-.signUpMain {
-  background-color: white;
-}
->>>>>>> Stashed changes
