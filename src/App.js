@@ -1,17 +1,12 @@
-<<<<<<< Updated upstream
-import './App.css';
-import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
-=======
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import LoginForm from "./login/loginform.jsx";
+// SignUp 컴포넌트가 import 되어야 함
 import SignUp from "./login/signup.jsx";
->>>>>>> Stashed changes
 
 // 메인 페이지
 function Home() {
-  return <div />;
+  return <div></div>;
 }
 
 function App() {
@@ -37,21 +32,12 @@ function App() {
             <Link to="/login">로그인</Link>
           </div>
         </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/signup" element={<SignUp />} />
+        </Routes>
       </div>
-<<<<<<< Updated upstream
-      <div>
-        <img src="" alt="" />
-      </div>
-=======
-
-      {/*Router 내에서만 사용 가능, Route 관리  */}
-      <Routes>
-        {/* 페이지간 연결 */}
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<LoginForm />} />
-        <Route path="/signup" element={<SignUp />} />
-      </Routes>
->>>>>>> Stashed changes
     </Router>
   );
 }

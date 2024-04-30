@@ -16,8 +16,8 @@
   font-size: xx-large;
   font-weight: 600;
   margin-right: auto;
-  color: black; /* a tag 사용 시 기본 글씨 컬러는 파란색이어서 검은색으로 변경*/
-  text-decoration: none; /* a tag 사용 시 생기는 밑줄 제거*/
+  color: black;
+  text-decoration: none;
 }
 
 .nav h2 a {
@@ -43,7 +43,6 @@
 }
 
 /* 로그인 */
-
 .navLogin {
   margin-right: 50px;
 }
@@ -53,6 +52,7 @@
   text-decoration: none;
 }
 
+/* 로그인 폼 */
 .loginform {
   display: flex;
   /* 세로로 일렬로 배치 */
@@ -78,7 +78,6 @@
 }
 
 .loginform input {
-  /* 안쪽 여백 */
   padding: 10px 100px;
 }
 
@@ -87,8 +86,7 @@
   padding-left: 10px;
 }
 
-/* 로그인 폼 감싸고 있는 div */
-
+/* 로그인 폼 감싸고 있는 박스 */
 .box {
   display: flex;
   flex-direction: column;
@@ -106,76 +104,6 @@
 }
 
 /* 로그인 버튼 */
-
-.login-button {
-  width: 365px;
-  height: 40px;
-  background-color: #296cf2;
-  color: white;
-  /* 기본 테두리 X */
-  border: none;
-  /* 클릭했을 시 생기는 테두리 X */
-  outline: none;
-  border-radius: 20px;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-/* 회원가입 */
-
-.sign-up a {
-  color: white;
-  text-decoration: none;
-  font-size: 10px;
-}
-
-.signUpMain {
-  background-color: white;
-}
-
-.loginform form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.loginform div {
-  margin-bottom: 20px; /* 각 입력란과 버튼 사이의 간격 조절 */
-}
-
-.loginform label {
-  display: none; /* label을 숨김 처리 */
-}
-
-.loginform input {
-  padding: 10px 100px;
-}
-
-.loginform input::placeholder {
-  text-align: center;
-  padding-left: 10px;
-}
-
-/* 로그인 폼 감싸고 있는 div */
-
-.box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 450px;
-  width: 450px;
-  background-color: #262626;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.box div {
-  margin-bottom: 20px;
-}
-
-/* 로그인 버튼 */
-
 .login-button {
   width: 365px;
   height: 40px;
@@ -188,8 +116,7 @@
   margin-top: 10px;
 }
 
-/* 회원가입 */
-
+/* 회원가입 링크 */
 .sign-up a {
   color: white;
   text-decoration: none;
