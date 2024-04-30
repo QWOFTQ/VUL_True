@@ -1,10 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import LoginForm from "./login/loginform.jsx";
+// SignUp 컴포넌트가 import 되어야 함
 import SignUp from "./login/signup.jsx";
 
 function Home() {
-  <div></div>;
+  return <div ></div>;
 }
 
 function App() {
@@ -26,8 +27,13 @@ function App() {
           </div>
         </div>
       </div>
+      <div>
+        <img src="" alt="" />
+      </div>
 
+      {/*Router 내에서만 사용 가능, Route 관리  */}
       <Routes>
+        {/* 페이지간 연결 */}
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path="/signup" element={<SignUp />} />
