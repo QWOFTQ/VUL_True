@@ -5,7 +5,7 @@ import LoginForm from "./login/loginform.jsx";
 import SignUp from "./login/signup.jsx";
 
 function Home() {
-  return <div className="signUpMain"></div>;
+  return <div className="signUpMain">dd</div>;
 }
 
 function App() {
