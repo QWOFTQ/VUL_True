@@ -69,11 +69,15 @@
   background-color: white;
 }
 
-.loginform form {
+.loginform {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  height: 100vh;
+  background-color: white;
+  text-align: center; /* 이 줄을 추가 */
 }
+
 
 .loginform div {
   margin-bottom: 20px; /* 각 입력란과 버튼 사이의 간격 조절 */
@@ -96,14 +100,35 @@
 .box {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* 수평 중앙 정렬 */
   justify-content: center;
-  height: 450px;
-  width: 450px;
+  height: 400px;
+  width: 600px;
   background-color: #262626;
   padding: 20px;
   border-radius: 10px;
 }
+
+.box input[type="text"],
+.box input[type="email"],
+.box input[type="password"] {
+  width: 100%; /* Responsive width */
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px;
+  background-color: #fff; /* 입력란 배경색을 흰색으로 설정 */
+  color: #000; /* 입력란 텍스트 색상을 검은색으로 설정 */
+}
+
+.box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin-left: 20px;
+}
+
 
 .box div {
   margin-bottom: 20px;
@@ -129,7 +154,54 @@
   font-size: 10px;
 }
 
-/* 수정된 CSS */
-.signUpMain {
+/* 메뉴바 하단 div */
+.backGround {
   background-color: white;
+}
+
+/* 회원가입 */
+.signUpMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px; /* div 박스의 너비를 설정 */
+  height: 600px; /* div 박스의 높이를 설정 */
+  margin: 20px auto 0; /* 페이지 중앙에 배치 */
+  background-color: #000; /* 배경색을 검은색으로 설정 */
+  color: #fff; /* 텍스트 색상을 흰색으로 설정 */
+  padding: 10px; /* 내부 여백을 설정 */
+  border-radius: 10px; /* 모서리를 둥글게 설정 */
+}
+
+
+.signUpMain h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.signUpMain p {
+  margin-bottom: 20px;
+}
+
+.signUpMain input[type="text"],
+.signUpMain input[type="email"],
+.signUpMain input[type="password"] {
+  width: 80%; /* Responsive width */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px;
+  background-color: #fff; /* 입력란 배경색을 흰색으로 설정 */
+  color: #000; /* 입력란 텍스트 색상을 검은색으로 설정 */
+}
+
+.signUpMain button {
+  width: 80%;
+  padding: 10px;
+  background-color: #296cf2; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
