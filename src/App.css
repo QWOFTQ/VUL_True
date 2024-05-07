@@ -78,7 +78,6 @@
   text-align: center; /* 이 줄을 추가 */
 }
 
-
 .loginform div {
   margin-bottom: 20px; /* 각 입력란과 버튼 사이의 간격 조절 */
 }
@@ -109,9 +108,9 @@
   border-radius: 10px;
 }
 
-.box input[type="text"],
-.box input[type="email"],
-.box input[type="password"] {
+.box input[type='text'],
+.box input[type='email'],
+.box input[type='password'] {
   width: 100%; /* Responsive width */
   margin: 10px auto;
   padding: 10px;
@@ -128,7 +127,6 @@
   text-align: center;
   margin-left: 20px;
 }
-
 
 .box div {
   margin-bottom: 20px;
@@ -174,7 +172,6 @@
   border-radius: 10px; /* 모서리를 둥글게 설정 */
 }
 
-
 .signUpMain h2 {
   margin-bottom: 20px;
   font-size: 24px;
@@ -184,9 +181,9 @@
   margin-bottom: 20px;
 }
 
-.signUpMain input[type="text"],
-.signUpMain input[type="email"],
-.signUpMain input[type="password"] {
+.signUpMain input[type='text'],
+.signUpMain input[type='email'],
+.signUpMain input[type='password'] {
   width: 80%; /* Responsive width */
   padding: 10px;
   margin-bottom: 20px;
@@ -199,9 +196,47 @@
 .signUpMain button {
   width: 80%;
   padding: 10px;
-  background-color: #296cf2; 
+  background-color: #296cf2;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+/* 디스플레이 카드 */
+
+.ServerDashboard {
+  background-color: #ffffff;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 10px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.small {
+  flex: 1 0 20%;
+  height: 100px;
+}
+
+.medium {
+  flex: 1 0 23%;
+  height: 200px;
+}
+
+.large {
+  flex: 1 0 45%;
+  height: 500px;
 }
